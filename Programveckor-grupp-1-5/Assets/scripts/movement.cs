@@ -18,14 +18,34 @@ public class movement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, 5);
         }
-        rb.linearVelocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.DownArrow))
         {
             rb.linearVelocity = new Vector2(0, -5);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.linearVelocity = new Vector2(5, 0);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            rb.linearVelocity = new Vector2(-5, 0);
+        }
+        //flyttar med hjälp av wasd
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.linearVelocity = new Vector2(0, 5);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.linearVelocity = new Vector2(0, -5);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.linearVelocity = new Vector2(5, 0);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.linearVelocity = new Vector2(-5, 0);
         }
     }
 }
