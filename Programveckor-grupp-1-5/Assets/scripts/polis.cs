@@ -15,7 +15,7 @@ public class polis : MonoBehaviour
     {
         if (transform.position.x < -6)
         {
-            float randomYposition = Random.Range(3.5f, -3.5f);
+            float randomYposition = Random.Range(0, -3.5f);
             transform.position = new Vector2(6, randomYposition);
             if (rigidbody.linearVelocity.x > 26)
             {
