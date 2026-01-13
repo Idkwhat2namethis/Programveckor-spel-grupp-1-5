@@ -8,6 +8,7 @@ public class Gambling : MonoBehaviour
         print(randomNumber);
         if (randomNumber == 2 || randomNumber == 6 || randomNumber == 8 || randomNumber == 10)
         {
+
             print(" Du har fått en 2x poäng multiplikator under 60 sekunder! ");
         }
         else if (randomNumber == 3 || randomNumber == 9 || randomNumber == 5)
