@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
@@ -32,7 +33,12 @@ public class movement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, -5);
         }
-
-
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        SceneManager.LoadScene(1);
+    }
+
 }

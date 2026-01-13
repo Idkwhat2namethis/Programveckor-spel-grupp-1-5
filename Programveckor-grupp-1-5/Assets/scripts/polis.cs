@@ -15,11 +15,11 @@ public class polis : MonoBehaviour
     {
         if (transform.position.x < -6)
         {
-            float randomYposition = Random.Range(-9.0f, 9.0f);
+            float randomYposition = Random.Range(3.5f, -3.5f);
             transform.position = new Vector2(6, randomYposition);
-            if (rigidbody.linearVelocity.x > -10)
+            if (rigidbody.linearVelocity.x > 26)
             {
-                rigidbody.linearVelocity += new Vector2(-0.5f, -0);
+                rigidbody.linearVelocity += new Vector2(-3f, -0);
             }
         }
 
