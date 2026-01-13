@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: "Assets/Scenes/f\xF6rlust.unity"
+    guid: 49daf6b62965b074f841716fb6c7a530
+  - enabled: 1
+    path: Assets/Scenes/stadie.1.unity
+    guid: 5ebefde923d59e04ab92adb22cceb224
+  - enabled: 1
+    path: Assets/Scenes/stadie.2.unity
+    guid: 8f2574d6b26001f4fb1c6b17a02ef424
+  - enabled: 1
+    path: Assets/Scenes/stadie.3.unity
+    guid: 29966f7192cc92741baaca02afa00c6d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
