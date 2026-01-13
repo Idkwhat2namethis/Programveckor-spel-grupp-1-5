@@ -7,7 +7,7 @@ public class polis : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        rigidbody.linearVelocity = new Vector2(-3, 0);
+        rigidbody.linearVelocity = new Vector2(-5, 0);
     }
 
     // Update is called once per frame
