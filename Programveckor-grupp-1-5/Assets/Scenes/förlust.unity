@@ -402,8 +402,8 @@ GameObject:
   - component: {fileID: 572058010}
   - component: {fileID: 572058014}
   - component: {fileID: 572058013}
-  - component: {fileID: 572058012}
   - component: {fileID: 572058011}
+  - component: {fileID: 572058012}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -487,13 +487,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 572058009}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1117522199}
+        m_TargetAssemblyTypeName: restart, Assembly-CSharp
+        m_MethodName: redo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -720,7 +720,6 @@ GameObject:
   - component: {fileID: 1034346996}
   - component: {fileID: 1034346995}
   - component: {fileID: 1034346994}
-  - component: {fileID: 1034346997}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -792,13 +791,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1034346991}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1117522198}
+        m_TargetAssemblyTypeName: Back_to_start, Assembly-CSharp
+        m_MethodName: back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -842,18 +841,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034346991}
   m_CullTransparentMesh: 1
---- !u!114 &1034346997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034346991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05d1532be033cc8408d1cbb6f57454a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Back_to_start
 --- !u!1 &1117522193
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +853,8 @@ GameObject:
   - component: {fileID: 1117522196}
   - component: {fileID: 1117522195}
   - component: {fileID: 1117522194}
+  - component: {fileID: 1117522198}
+  - component: {fileID: 1117522199}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -957,6 +946,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1117522198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117522193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d1532be033cc8408d1cbb6f57454a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Back_to_start
+--- !u!114 &1117522199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117522193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780dbb1bbddb77444bc4bc641d5c5b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::restart
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
