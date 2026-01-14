@@ -17,13 +17,26 @@ public class polis : MonoBehaviour
         {
             float randomYposition = Random.Range(0, -3.5f);
             transform.position = new Vector2(6, randomYposition);
-            if (rigidbody.linearVelocity.x > 26)
-            {
-                rigidbody.linearVelocity += new Vector2(-3f, -0);
-            }
+
         }
 
 
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("InversPolis"))
+        {
+            float randomYposition = Random.Range(0, -3.5f);
+            transform.position = new Vector2(6, randomYposition);
+
+            rigidbody.linearVelocity = new Vector2(-5f, 0f);
+            rigidbody.angularVelocity = 0f;
+        }
+    }
+
+
+
+
 }
 
