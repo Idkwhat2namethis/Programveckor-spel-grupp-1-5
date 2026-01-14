@@ -13,10 +13,10 @@ public class polis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -6)
+        if (transform.position.x < -12)
         {
             float randomYposition = Random.Range(0, -3.5f);
-            transform.position = new Vector2(6, randomYposition);
+            transform.position = new Vector2(12, randomYposition);
 
         }
 
