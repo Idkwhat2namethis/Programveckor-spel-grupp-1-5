@@ -1,7 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Gambling : MonoBehaviour
 {
+
+    public void gamble()
+    {
+        SceneManager.LoadScene(0);
+    }
     void Start()
     {
         int randomNumber = Random.Range(1, 11);
@@ -25,6 +31,10 @@ public class Gambling : MonoBehaviour
             print(" Du har uppgraderat till en ny substans! ");
         }
     }
-
 }
+
+
+
+
+
 
