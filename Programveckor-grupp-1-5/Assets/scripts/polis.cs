@@ -30,7 +30,7 @@ public class polis : MonoBehaviour
             float randomYposition = Random.Range(0, -3.5f);
             transform.position = new Vector2(6, randomYposition);
 
-            rigidbody.linearVelocity = new Vector2(-5f, 0f);
+            rigidbody.linearVelocity = new Vector2(-7f, 0f);
             rigidbody.angularVelocity = 0f;
         }
         if (collision.gameObject.CompareTag("AiPolis"))
@@ -38,7 +38,7 @@ public class polis : MonoBehaviour
             float randomYposition = Random.Range(0, -3.5f);
             transform.position = new Vector2(6, randomYposition);
 
-            rigidbody.linearVelocity = new Vector2(-5f, 0f);
+            rigidbody.linearVelocity = new Vector2(-7f, 0f);
             rigidbody.angularVelocity = 0f;
         }
     }
