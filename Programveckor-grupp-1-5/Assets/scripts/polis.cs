@@ -15,7 +15,7 @@ public class polis : MonoBehaviour
     {
         if (transform.position.x < -12)
         {
-            float randomYposition = Random.Range(0, -3.5f);
+            float randomYposition = Random.Range(0, -4.4f);
             transform.position = new Vector2(12, randomYposition);
 
         }
