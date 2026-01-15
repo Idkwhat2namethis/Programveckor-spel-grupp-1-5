@@ -33,6 +33,14 @@ public class polis : MonoBehaviour
             rigidbody.linearVelocity = new Vector2(-5f, 0f);
             rigidbody.angularVelocity = 0f;
         }
+        if (collision.gameObject.CompareTag("AiPolis"))
+        {
+            float randomYposition = Random.Range(0, -3.5f);
+            transform.position = new Vector2(6, randomYposition);
+
+            rigidbody.linearVelocity = new Vector2(-5f, 0f);
+            rigidbody.angularVelocity = 0f;
+        }
     }
 
 
