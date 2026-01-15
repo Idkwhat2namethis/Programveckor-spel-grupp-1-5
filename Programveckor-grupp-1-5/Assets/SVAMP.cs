@@ -15,9 +15,9 @@ public class SVAMP : MonoBehaviour
     {
         if (transform.position.y < 0)
         {
-            float RandomXposition = Random.Range(-6.35f, 3.80f);
+            float RandomXposition = Random.Range(-8.30f, 8.50f);
             transform.position = new Vector2(RandomXposition, 0);
-            float RandomYposition = Random.Range(2.0f, -3.40f);
+            float RandomYposition = Random.Range(1.40f, -4.5f);
             transform.position = new Vector2(RandomYposition, 0);
 
         }
@@ -25,9 +25,9 @@ public class SVAMP : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        float RandomXposition = Random.Range(-6.35f, 3.80f);
+        float RandomXposition = Random.Range(-8.30f, 8.50f);
         transform.position = new Vector2(RandomXposition, 0);
-        float RandomYposition = Random.Range(2.0f, -3.40f);
+        float RandomYposition = Random.Range(1.40f, -4.5f);
         transform.position = new Vector2(RandomYposition, 0);
     }
 }
