@@ -7,10 +7,11 @@ public class score : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public TextMeshProUGUI gui;
+    float score1 = 0;
 
     void Start()
     {
-        float score1 = 0;
+
     }
 
     // Update is called once per frame
