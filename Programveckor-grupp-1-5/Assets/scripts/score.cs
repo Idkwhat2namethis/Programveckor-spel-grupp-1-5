@@ -16,7 +16,7 @@ public class score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score1 += Time.deltaTime * 10f;
+        score1 += Time.deltaTime * 20f;
         gui.text = Mathf.RoundToInt(score1).ToString();
         {
             if (score1 == 500)
