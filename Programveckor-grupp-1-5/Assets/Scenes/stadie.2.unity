@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c1157fc2111894ba5b924b1165dd10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::polis1
+  spawnDelay: 2
 --- !u!50 &232610939
 Rigidbody2D:
   serializedVersion: 5
@@ -1149,6 +1150,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4544065386274176611, guid: 14dfe99b2205ea841b47184520a2b356, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544065386274176611, guid: 14dfe99b2205ea841b47184520a2b356, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5637226369333639327, guid: 14dfe99b2205ea841b47184520a2b356, type: 3}
