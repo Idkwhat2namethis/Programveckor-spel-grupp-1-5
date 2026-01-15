@@ -32,6 +32,8 @@ public class polis1 : MonoBehaviour
         if (waiting) return;
         waiting = true;
 
+        transform.position = new Vector2(2000, 2000);
+
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
 
