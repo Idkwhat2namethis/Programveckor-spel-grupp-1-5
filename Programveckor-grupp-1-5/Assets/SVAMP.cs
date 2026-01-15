@@ -7,6 +7,7 @@ public class SVAMP : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = new Vector2(-7, 0);
 
     }
 
@@ -15,8 +16,6 @@ public class SVAMP : MonoBehaviour
     {
         if (transform.position.y < 0)
         {
-            float RandomXposition = Random.Range(-8.30f, 8.50f);
-            transform.position = new Vector2(RandomXposition, 0);
             float RandomYposition = Random.Range(1.40f, -4.5f);
             transform.position = new Vector2(RandomYposition, 0);
 
@@ -25,9 +24,12 @@ public class SVAMP : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        float RandomXposition = Random.Range(-8.30f, 8.50f);
-        transform.position = new Vector2(RandomXposition, 0);
-        float RandomYposition = Random.Range(1.40f, -4.5f);
-        transform.position = new Vector2(RandomYposition, 0);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            float RandomYposition = Random.Range(1.40f, -4.5f);
+            transform.position = new Vector2(RandomYposition, 0);
+
+        }
     }
 }

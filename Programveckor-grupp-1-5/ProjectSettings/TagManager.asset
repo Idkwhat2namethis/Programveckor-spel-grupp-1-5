@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Polis
   - InversPolis
+  - Svamp
   layers:
   - Default
   - TransparentFX
