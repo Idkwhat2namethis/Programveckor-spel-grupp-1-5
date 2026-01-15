@@ -22,7 +22,7 @@ public class backgrund : MonoBehaviour
         {
             transform.position = new Vector2(90, -5);
         }
-        score1 += 1;
+        score1 += Time.deltaTime * 10f;
         if (score1 <= 510)
         {
             animator.Play("Mushroom distortion 2");
