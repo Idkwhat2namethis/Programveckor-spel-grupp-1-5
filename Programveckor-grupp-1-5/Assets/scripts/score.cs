@@ -9,6 +9,7 @@ public class score : MonoBehaviour
     public TextMeshProUGUI gui;
     float score1 = 0;
 
+
     void Start()
     {
 
@@ -17,6 +18,8 @@ public class score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         score1 += Time.deltaTime * 20f;
         gui.text = Mathf.RoundToInt(score1).ToString();
         {
@@ -25,7 +28,7 @@ public class score : MonoBehaviour
                 SceneManager.LoadScene(3);
             }
         }
-        if (score1 == 2000)
+        if (score1 == 1000)
         {
             SceneManager.LoadScene(4);
         }
