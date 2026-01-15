@@ -19,12 +19,9 @@ public class backgrund : MonoBehaviour
     {
         if (transform.position.x < -74)
         {
-            rigidbody.linearVelocity += new Vector2(78, 0);
+            transform.position = new Vector2(78, 0);
         }
-        if (Input.GetKey(KeyCode.W))
-        {
-            animator.Play("Mushroom distortion1");
-        }
+
 
 
     }
