@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class backgrund : MonoBehaviour
+public class bak2 : MonoBehaviour
 {
     Rigidbody2D rigidbody;
     SpriteRenderer sr;
@@ -13,6 +13,7 @@ public class backgrund : MonoBehaviour
         rigidbody.linearVelocity = new Vector2(-5, 0);
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        animator.Play("Mushroom distortion 2");
     }
 
     // Update is called once per frame
@@ -22,15 +23,5 @@ public class backgrund : MonoBehaviour
         {
             transform.position = new Vector2(90, -5);
         }
-        score1 += Time.deltaTime * 10f;
-        if (score1 >= 100)
-        {
-            animator.Play("Mushroom distortion 6");
-        }
-        else if (score1 >= 50)
-        {
-            animator.Play("Mushroom distortion 2");
-        }
     }
-
 }
