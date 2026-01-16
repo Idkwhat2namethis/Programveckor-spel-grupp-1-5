@@ -1,13 +1,12 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class score : MonoBehaviour
+public class scores3 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public TextMeshProUGUI gui;
-    float score1 = 0;
+    float score1 = 1000;
 
 
     void Start()
@@ -22,16 +21,11 @@ public class score : MonoBehaviour
 
         score1 += Time.deltaTime * 20f;
         gui.text = Mathf.RoundToInt(score1).ToString();
-        {
-            if (score1 >= 500)
-            {
-                SceneManager.LoadScene(3);
-            }
-        }
-        if (score1 >= 1000)
-        {
-            SceneManager.LoadScene(4);
-        }
+
+
+
+
+
     }
 
 }
