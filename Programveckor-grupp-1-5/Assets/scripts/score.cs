@@ -23,12 +23,12 @@ public class score : MonoBehaviour
         score1 += Time.deltaTime * 20f;
         gui.text = Mathf.RoundToInt(score1).ToString();
         {
-            if (score1 == 500)
+            if (score1 >= 500)
             {
                 SceneManager.LoadScene(3);
             }
         }
-        if (score1 == 1000)
+        if (score1 >= 1000)
         {
             SceneManager.LoadScene(4);
         }
